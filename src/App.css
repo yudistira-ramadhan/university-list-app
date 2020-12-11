@@ -3,7 +3,7 @@
 */
 .layout__wrapper {
   height: 100%;
-  margin: 0;
+  margin-bottom: 3rem;
   display:flex; 
   flex-direction:column; 
 }
@@ -17,7 +17,8 @@
 
 .footer__wrapper {
   background-color:#424949;
-  /* margin-top: auto; */
+  bottom: 0;
+  position: fixed;
   width: 100%;
 }
 

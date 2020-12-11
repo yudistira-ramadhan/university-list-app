@@ -1,9 +1,6 @@
 import './App.css'
-import {
-  Switch,
-  Route
-} from 'react-router-dom'
-import { Homepage, NamePage, CountryPage } from 'components/pages'
+import { Switch, Route } from 'react-router-dom'
+import { Homepage, NamePage, CountryPage, DetailPage } from 'components/pages'
 import { Navbar, Footer } from 'components/organisms'
 
 function App() {
@@ -16,7 +13,7 @@ function App() {
       <Switch>
         <Route path="/country" component={ CountryPage } />
         <Route path="/name" component={ NamePage } />
-        <Route path="/detail" component={ Homepage } />
+        <Route path="/detail" component={ DetailPage } />
         <Route path="/" component={ Homepage } />
       </Switch>
       
