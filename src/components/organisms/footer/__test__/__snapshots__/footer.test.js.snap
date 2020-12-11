@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="footer__copyright"
+    data-testid="footer"
+  >
+    All Rights Reserved © 
+    2020
+     by Yudistira Ramadhan
+  </div>
+</div>
+`;

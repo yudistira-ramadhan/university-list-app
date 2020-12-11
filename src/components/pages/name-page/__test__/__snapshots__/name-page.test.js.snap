@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="container"
+  data-testid="name-page"
+>
+  <div
+    className="text-center jumbotron"
+  >
+    <h2
+      className="font-weight-bolder"
+    >
+      University List by Name
+    </h2>
+    <hr
+      className="my-4"
+    />
+    <p
+      className="lead"
+    >
+      You can search the University from around the World.
+    </p>
+    <div
+      className="text-center"
+    >
+      <div
+        className="d-flex"
+      >
+        <input
+          className="mr-2 form-control"
+          name="university"
+          onChange={[Function]}
+          placeholder="Input university name..."
+          type="text"
+        />
+        <button
+          aria-label={null}
+          className="btn btn-outline-primary"
+          data-testid="search-button"
+          onClick={[Function]}
+          type="button"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

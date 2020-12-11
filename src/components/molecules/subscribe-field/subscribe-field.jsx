@@ -13,13 +13,15 @@ const SubscribeField = () => {
     email: ''
   })
   const onHandleClick = () => {
-    const fileData = JSON.stringify(user)
-    const blob = new Blob([fileData], { type: 'text/plain' })
-    const url = URL.createObjectURL(blob)
-    const link = document.createElement('a')
-    link.download = 'users.json'
-    link.href = url
-    link.click()
+    if(user.email !== ''){
+      const fileData = JSON.stringify(user)
+      const blob = new Blob([fileData], { type: 'text/plain' })
+      const url = URL.createObjectURL(blob)
+      const link = document.createElement('a')
+      link.download = 'users.json'
+      link.href = url
+      link.click()
+    }
   }
   
   const onHandleChange = (e) => {
@@ -38,6 +40,7 @@ const SubscribeField = () => {
           </Col>
           <Col xs='5' sm='3' md='3'>
             <Button
+              data-testid='subscribe-button'
               className='py-1 w-100'
               color='primary'
               onClick={ onHandleClick }

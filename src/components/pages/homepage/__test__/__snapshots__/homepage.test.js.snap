@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="container"
+  data-testid="homepage"
+>
+  <div
+    className="mt-5 jumbotron"
+  >
+    <h2
+      className="text-center"
+    >
+      Welcome to the University List App
+    </h2>
+    <hr
+      className="my-4"
+    />
+    <p
+      className="lead text-center"
+    >
+      This app can help anyone to search the information about the University around the World.
+    </p>
+    <p
+      className="text-center mt-5"
+    >
+      To get updated about the University information around the World, please subscribe to our newsletter.
+    </p>
+    <div>
+      <form
+        className=""
+      >
+        <div
+          className="form-group"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="pr-0 col-7 col-sm-9 col-md-9"
+            >
+              <input
+                className="form-control"
+                onChange={[Function]}
+                placeholder="Enter your email..."
+                type="email"
+              />
+            </div>
+            <div
+              className="col-5 col-sm-3 col-md-3"
+            >
+              <button
+                aria-label={null}
+                className="py-1 w-100 btn btn-outline-primary"
+                data-testid="subscribe-button"
+                onClick={[Function]}
+                type="button"
+              >
+                SUBSCRIBE
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;

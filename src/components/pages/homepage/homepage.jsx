@@ -3,7 +3,7 @@ import { Container, Jumbotron } from 'reactstrap'
 import { SubscribeField } from 'components/molecules'
 
 const Homepage = () => (
-  <Container>
+  <Container data-testid='homepage'>
     <Jumbotron className='mt-5'>
       <h2 className='text-center'>
         Welcome to the University List App

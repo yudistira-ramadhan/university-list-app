@@ -11,6 +11,7 @@ const Navbar = () =>{
       color='info'
       expand='md'
       dark
+      data-testid='navbar'
     >
 
       <NavbarBrand 
@@ -48,7 +49,7 @@ const Navbar = () =>{
           <NavItem>
             <NavLink 
               className='font-weight-bold'
-              href='/show'
+              href='/detail'
             >
               University Detail
             </NavLink>

@@ -9,6 +9,13 @@ const propTypes = {
   onHandleClick  : PropTypes.func
 }
 
+const defaultProps = {
+  name           : 'default name',
+  placeholder    : 'default placeholder',
+  onHandleChange : () => {},
+  onHandleClick  : () => {}
+}
+
 const SearchField = ({ name, placeholder, onHandleChange, onHandleClick }) => (
   <div className='d-flex'>
     <Input
@@ -19,6 +26,7 @@ const SearchField = ({ name, placeholder, onHandleChange, onHandleClick }) => (
       onChange={ onHandleChange }
     />
     <Button
+      data-testid='search-button'
       color='primary'
       onClick={ onHandleClick }
       outline
@@ -29,4 +37,5 @@ const SearchField = ({ name, placeholder, onHandleChange, onHandleClick }) => (
 )
 
 SearchField.propTypes = propTypes
+SearchField.defaultProps = defaultProps
 export default SearchField

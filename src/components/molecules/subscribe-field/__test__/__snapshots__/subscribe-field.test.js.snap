@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<form
+  className=""
+>
+  <div
+    className="form-group"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="pr-0 col-7 col-sm-9 col-md-9"
+      >
+        <input
+          className="form-control"
+          onChange={[Function]}
+          placeholder="Enter your email..."
+          type="email"
+        />
+      </div>
+      <div
+        className="col-5 col-sm-3 col-md-3"
+      >
+        <button
+          aria-label={null}
+          className="py-1 w-100 btn btn-outline-primary"
+          data-testid="subscribe-button"
+          onClick={[Function]}
+          type="button"
+        >
+          SUBSCRIBE
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
+`;

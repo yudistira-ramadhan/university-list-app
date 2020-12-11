@@ -9,6 +9,17 @@ const propTypes = {
   pagination      : PropTypes.object
 }
 
+const defaultProps = {
+  universities: [{
+    name      : 'default name',
+    country   : 'default country',
+    web_pages : [],
+    domains   : []
+  }],
+  handlePageClick : ()=>{},
+  pagination      : {}
+}
+
 const UniversityListItems = ({ universities }) => {
 
 
@@ -31,17 +42,20 @@ const UniversityListItems = ({ universities }) => {
 }
 
 const UniversityList = ({ universities, handlePageClick, pagination }) => (
-  <>
-    <Row>
-      <UniversityListItems universities={ universities } />
-    </Row>
-    <Pagination 
-      handlePageClick={ handlePageClick }
-      pagination={ pagination }
-    />
-      
-  </>
+  universities.length > 0 ? 
+    <div data-testid='university-list'>
+      <Row>
+        <UniversityListItems universities={ universities } />
+      </Row>
+      <Pagination 
+        handlePageClick={ handlePageClick }
+        pagination={ pagination }
+      />
+    </div>
+    :
+    <></>
 )
 
 UniversityList.propTypes = propTypes
+UniversityList.defaultProps = defaultProps
 export default UniversityList

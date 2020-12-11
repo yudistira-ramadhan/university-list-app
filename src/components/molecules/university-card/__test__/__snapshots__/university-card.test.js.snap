@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="text-center card"
+  data-testid="university-card"
+>
+  <div
+    className="card-header"
+  >
+    Default Name
+  </div>
+  <div
+    className="card-body"
+  >
+    <div
+      className="card-title"
+    >
+      Default Country
+    </div>
+    <hr
+      className="my-2"
+    />
+    <p
+      className="card-text"
+    >
+      <a
+        href={Array []}
+        rel="noopener"
+        target="blank"
+      />
+    </p>
+  </div>
+</div>
+`;

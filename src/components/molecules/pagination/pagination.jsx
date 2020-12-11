@@ -7,8 +7,13 @@ const propTypes = {
   pagination      : PropTypes.object
 }
 
+const defaultProps = {
+  handlePageClick : () => { },
+  pagination      : {}
+}
+
 const Pagination = ({ handlePageClick, pagination }) => (
-  <div className='d-flex my-3'>
+  <div data-testid='pagination' className='d-flex my-3'>
     <ReactPaginate
       previousLabel={ 'prev' }
       nextLabel={ 'next' }
@@ -26,4 +31,5 @@ const Pagination = ({ handlePageClick, pagination }) => (
 )
 
 Pagination.propTypes = propTypes
+Pagination.defaultProps = defaultProps
 export default Pagination

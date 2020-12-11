@@ -8,7 +8,7 @@ const CountryPage = () => {
   const [universities, setUniversities] = useState([])
   const [inputValue, setinputValue] = useState('')
   const [pagination, setPagination] = useState({
-    perPage   : 10,
+    perPage   : 12,
     pageCount : 0
   })
 
@@ -31,7 +31,9 @@ const CountryPage = () => {
   }
 
   const onHandleClick = () => {
-    fetchUniversityList()
+    if(inputValue !== ''){
+      fetchUniversityList()
+    }
   }
 
   const handlePageClick = (e) => {
@@ -41,16 +43,16 @@ const CountryPage = () => {
   }
 
   return (
-    <Container>
+    <Container data-testid='country-page'>
       <Jumbotron className='text-center'>
         <h2 className='font-weight-bolder'>
         University List by Country
         </h2>
         <hr className='my-4' />
         <p className='lead'>
-        You can see the list of university from the specific country by input the country name.
+        You can see the list of University from the specific Country by input the Country name.
         </p>
-        <div className='text-center'>
+        <div data-testid='search-field' className='text-center'>
           <SearchField 
             name='country' 
             placeholder='Input country name...' 
@@ -59,17 +61,11 @@ const CountryPage = () => {
           />
         </div>
       </Jumbotron>
-      { universities.length > 0 ?
-        <>
-          <UniversityList 
-            universities={ universities }
-            pagination={ pagination }
-            handlePageClick={ handlePageClick }
-          />
-        </>
-        :
-        <></>
-      }
+      <UniversityList 
+        universities={ universities }
+        pagination={ pagination }
+        handlePageClick={ handlePageClick }
+      />
     </Container>
   )
 }

@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="container"
+  data-testid="detail-page"
+>
+  <div
+    className="text-center jumbotron"
+  >
+    <h2
+      className="font-weight-bolder"
+    >
+      University List by Detailed Input
+    </h2>
+    <hr
+      className="my-4"
+    />
+    <p
+      className="lead"
+    >
+      You can search the University by inputting specific University name and Country.
+    </p>
+    <div
+      className="text-center"
+    >
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="bg-info text-light input-group-text"
+          >
+            Name
+          </span>
+        </div>
+        <input
+          className="form-control"
+          name="university"
+          onChange={[Function]}
+          placeholder="Input university name..."
+          type="text"
+        />
+      </div>
+      <div
+        className="mt-2 input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <span
+            className="bg-info text-light input-group-text"
+          >
+            Country
+          </span>
+        </div>
+        <input
+          className="form-control"
+          name="country"
+          onChange={[Function]}
+          placeholder="Input country name..."
+          type="text"
+        />
+      </div>
+      <button
+        aria-label={null}
+        className="mt-2 w-50 btn btn-outline-primary"
+        onClick={[Function]}
+        type="button"
+      >
+        Search
+      </button>
+    </div>
+  </div>
+</div>
+`;
